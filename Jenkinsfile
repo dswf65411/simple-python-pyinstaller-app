@@ -19,7 +19,7 @@ pipeline {
                 }
             }
             steps {
-                sh "python -m print ${branch_name}"
+                sh "python -m sources.print ${branch_name}"
             }
         }
     }
