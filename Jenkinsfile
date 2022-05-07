@@ -19,7 +19,7 @@ pipeline {
                 }
             }
             steps {
-                sh "python -m sources.print"
+                sh "python -m sources.print ${BUILD_NUMBER} ${env.BRANCH_NAME}"
             }
         }
     }
