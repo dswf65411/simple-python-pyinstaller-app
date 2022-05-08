@@ -27,6 +27,7 @@ pipeline {
                     224
                 '''
                 sh "echo ${env.NODE_NAME}"
+                sh "python --version"
             }
         }
     }
