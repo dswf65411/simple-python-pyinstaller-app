@@ -20,6 +20,12 @@ pipeline {
             }
             steps {
                 sh "python -m sources.print ${BUILD_NUMBER} ${env.BRANCH_NAME}"
+                sh '''
+                    echo 352
+                    python -m sources.print \
+                    625 \
+                    224
+                '''
             }
         }
     }
