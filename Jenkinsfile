@@ -26,7 +26,7 @@ pipeline {
                     625 \
                     224
                 '''
-                sh 'echo ${env.NODE_NAME}'
+                sh "echo ${env.NODE_NAME}"
             }
         }
     }
